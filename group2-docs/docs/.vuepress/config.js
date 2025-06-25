@@ -9,7 +9,7 @@ export default defineUserConfig({
   description: 'My first VuePress Site',
 
   theme: defaultTheme({
-    logo: 'https://vuejs.press/images/hero.png',
+    logo: './assets/om-logo-light',
 
     navbar: ['/', '/get-started', '/tutorials', '/guides', '/om-functions', '/resources', '/changelog' ],
   }),
