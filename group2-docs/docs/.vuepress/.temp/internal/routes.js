@@ -3,15 +3,15 @@ export const redirects = JSON.parse("{}")
 export const routes = Object.fromEntries([
   ["/changelog.html", { loader: () => import(/* webpackChunkName: "changelog.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/changelog.html.js"), meta: {"title":"Changelog"} }],
   ["/", { loader: () => import(/* webpackChunkName: "index.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":"Openmandness"} }],
+  ["/getting-started/installation.html", { loader: () => import(/* webpackChunkName: "getting-started_installation.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/getting-started/installation.html.js"), meta: {"title":"Installation"} }],
+  ["/getting-started/introduction.html", { loader: () => import(/* webpackChunkName: "getting-started_introduction.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/getting-started/introduction.html.js"), meta: {"title":"Introduction"} }],
+  ["/getting-started/quickstart.html", { loader: () => import(/* webpackChunkName: "getting-started_quickstart.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/getting-started/quickstart.html.js"), meta: {"title":"Quickstart"} }],
   ["/om-functions/arithmetic-operations.html", { loader: () => import(/* webpackChunkName: "om-functions_arithmetic-operations.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/om-functions/arithmetic-operations.html.js"), meta: {"title":"Arithmetic Operations"} }],
   ["/om-functions/array-operations.html", { loader: () => import(/* webpackChunkName: "om-functions_array-operations.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/om-functions/array-operations.html.js"), meta: {"title":"Array Operations"} }],
   ["/om-functions/logical-operations.html", { loader: () => import(/* webpackChunkName: "om-functions_logical-operations.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/om-functions/logical-operations.html.js"), meta: {"title":"Logical Operations"} }],
   ["/om-functions/statistics.html", { loader: () => import(/* webpackChunkName: "om-functions_statistics.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/om-functions/statistics.html.js"), meta: {"title":"Statistics"} }],
   ["/om-functions/transformations.html", { loader: () => import(/* webpackChunkName: "om-functions_transformations.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/om-functions/transformations.html.js"), meta: {"title":"Transformations"} }],
   ["/om-functions/utilities.html", { loader: () => import(/* webpackChunkName: "om-functions_utilities.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/om-functions/utilities.html.js"), meta: {"title":"Utilities"} }],
-  ["/getting-started/installation.html", { loader: () => import(/* webpackChunkName: "getting-started_installation.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/getting-started/installation.html.js"), meta: {"title":"Installation"} }],
-  ["/getting-started/introduction.html", { loader: () => import(/* webpackChunkName: "getting-started_introduction.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/getting-started/introduction.html.js"), meta: {"title":"Introduction"} }],
-  ["/getting-started/quickstart.html", { loader: () => import(/* webpackChunkName: "getting-started_quickstart.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/getting-started/quickstart.html.js"), meta: {"title":"Quickstart"} }],
   ["/resources/contributing.html", { loader: () => import(/* webpackChunkName: "resources_contributing.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/resources/contributing.html.js"), meta: {"title":"Contributing to Openmadness"} }],
   ["/resources/faq.html", { loader: () => import(/* webpackChunkName: "resources_faq.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/resources/faq.html.js"), meta: {"title":"Frequently Asked Questions"} }],
   ["/resources/glossary.html", { loader: () => import(/* webpackChunkName: "resources_glossary.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/resources/glossary.html.js"), meta: {"title":"Glossary"} }],
@@ -39,20 +39,3 @@ export const routes = Object.fromEntries([
   ["/tutorials/fundamentals/statistics.html", { loader: () => import(/* webpackChunkName: "tutorials_fundamentals_statistics.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/tutorials/fundamentals/statistics.html.js"), meta: {"title":"Statistics"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
 ]);
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateRoutes) {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-  }
-  if (__VUE_HMR_RUNTIME__.updateRedirects) {
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ routes, redirects }) => {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  })
-}
