@@ -7,7 +7,7 @@ description: "This guide will introduce you to the fundamentals of openmadness"
 
 # 👋 Introduction
 
-![openmadness-banner](../assets/openmadness-banner.png)
+![openmadness-banner](/openmadness-banner.png)
 
 [[toc]]
 
