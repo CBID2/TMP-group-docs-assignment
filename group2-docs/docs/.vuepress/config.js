@@ -17,6 +17,10 @@ export default defineUserConfig({
 
      navbar: [
       // NavbarLink
+       {
+        text: 'Home',
+        link: 'Readme.md',
+      },
       {
         text: 'Getting Started',
         link: '/getting-started/introduction.md',
