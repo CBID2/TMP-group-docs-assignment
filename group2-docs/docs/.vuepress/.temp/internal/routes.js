@@ -2,7 +2,6 @@ export const redirects = JSON.parse("{}")
 
 export const routes = Object.fromEntries([
   ["/changelog.html", { loader: () => import(/* webpackChunkName: "changelog.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/changelog.html.js"), meta: {"title":"Changelog"} }],
-  ["/get-started.html", { loader: () => import(/* webpackChunkName: "get-started.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/get-started.html.js"), meta: {"title":"Get Started"} }],
   ["/getting-started.html", { loader: () => import(/* webpackChunkName: "getting-started.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/getting-started.html.js"), meta: {"title":"Getting Started"} }],
   ["/guides.html", { loader: () => import(/* webpackChunkName: "guides.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/guides.html.js"), meta: {"title":"Guides"} }],
   ["/om-functions.html", { loader: () => import(/* webpackChunkName: "om-functions.html" */"C:/Users/DDR3/Desktop/Product-docs-cohort-1/group2-docs/docs/.vuepress/.temp/pages/om-functions.html.js"), meta: {"title":"OM-Functions"} }],
