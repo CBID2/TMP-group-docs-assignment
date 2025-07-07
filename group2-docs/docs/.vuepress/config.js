@@ -8,9 +8,9 @@ export default defineUserConfig({
   description: 'My first VuePress Site',
 
   theme: defaultTheme({
-    logo: '/om-logo-dark.svg',
+    logo: 'om-logo-dark.svg',
     logoAlt: 'openmadness-logo',
-    logoDark: '/om-logo-light.svg',
+    logoDark: 'om-logo-light.svg',
     colorMode: 'auto',
     colorModeSwitch: 'true',
     externalLinkIcon: 'true',
