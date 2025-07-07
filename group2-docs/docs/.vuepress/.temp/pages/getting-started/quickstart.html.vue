@@ -1,4 +1,4 @@
-<template><div><h2 id="quick-start" tabindex="-1"><a class="header-anchor" href="#quick-start"><span>Quick Start</span></a></h2>
+<template><div><h2 id="🚀-quick-start" tabindex="-1"><a class="header-anchor" href="#🚀-quick-start"><span>🚀 Quick Start</span></a></h2>
 <p>This quickstart tutorial is intended for users new to <strong>Openmadness</strong>. It introduces the core concepts of the library and demonstrates how to perform basic operations. Whether you're building a game, creating a simulation, or experimenting with procedural generation, this guide will help you get started quickly.</p>
 <div class="hint-container note">
 <p class="hint-container-title">Note</p>

@@ -1,6 +1,5 @@
 <template><div><h1 id="👋-introduction" tabindex="-1"><a class="header-anchor" href="#👋-introduction"><span>👋 Introduction</span></a></h1>
 <p><img src="/openmadness-banner.png" alt="openmadness-banner"></p>
-<nav class="table-of-contents"><ul><li><router-link to="#overview">Overview</router-link></li><li><router-link to="#in-this-guide-you-ll-learn">In this guide you&#39;ll learn:</router-link></li><li><router-link to="#who-should-use-this-guide">Who Should Use This Guide</router-link></li><li><router-link to="#tipyou-don-t-need-to-be-a-math-expert-openmadness-is-made-to-be-simple-friendly-and-easy-to-use-—-even-if-you-re-new-to-code">tipYou don’t need to be a math expert. Openmadness is made to be simple, friendly, and easy to use — even if you’re new to code.</router-link></li></ul></nav>
 <h2 id="overview" tabindex="-1"><a class="header-anchor" href="#overview"><span>Overview</span></a></h2>
 <p>Openmadness is a fun and beginner-friendly JavaScript tool that helps you do math and work with arrays (lists of numbers) without stress.
 It was built for learners, tinkerers, and developers who enjoy working with data in a simple and creative way.</p>

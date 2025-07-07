@@ -9,8 +9,6 @@ description: "This guide will introduce you to the fundamentals of openmadness"
 
 ![openmadness-banner](/openmadness-banner.png)
 
-[[toc]]
-
 
 ## Overview
 

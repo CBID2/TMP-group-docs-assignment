@@ -5,7 +5,7 @@ description: "This guide will help you get started with OpenMadness."
 ---
 
 
-## Quick Start
+## 🚀 Quick Start
 
 This quickstart tutorial is intended for users new to **Openmadness**. It introduces the core concepts of the library and demonstrates how to perform basic operations. Whether you're building a game, creating a simulation, or experimenting with procedural generation, this guide will help you get started quickly.
 
