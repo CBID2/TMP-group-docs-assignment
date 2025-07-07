@@ -1,34 +1,49 @@
 ---
 lang: en-US
-title: "Introduction"
-description: "This guide will introduce you to the fundamentals of openmadness"
+title: "👋 Overview"
+description: "Learn about the Openmadness library and its features."
 ---
 
-
-# 👋 Introduction
+# What is Openmadness?
 
 ![openmadness-banner](/openmadness-banner.png)
 
-[[toc]]
+**Openmadness** is a lightweight JavaScript library that clarifies array-based and mathematical operations. Inspired by the [NumPy](https://numpy.org/) library in Python, this library offers a JavaScript-first approach to everyday data manipulation tasks.
 
+At its core, Openmadness offers:
 
-## Overview
+- Add up all the numbers in an array
+- Find the average of numbers in an array
+- Transpose a matrix (like turning rows into columns)
+- Flatten a multi-dimensional array into a single one
 
-Openmadness is a fun and beginner-friendly JavaScript tool that helps you do math and work with arrays (lists of numbers) without stress. It was built for learners, tinkerers, and developers who enjoy working with data in a simple way.
+For example, if you want to add two arrays together, you can use Openmadness like this:
 
-In this guide, you’ll learn what Openmadness is, who it’s for, and how it can make working with numbers in JavaScript feel smooth and even fun.
+```js
+import { add } from 'openmadness';
 
-## What You’ll Learn
+add([1, 2], [3, 4]);
+// Result: [4, 6]
+```
 
-- What Openmadness is and why it exists
+## How to use the docs
 
-- Who the tool is built for
+The docs are organized into 4 sections:
 
-- What you can expect to do with it
+1. [**Getting Started**](/getting-started/introduction.md): This is where you learn how to install and use Openmadness.
+2. [**OM-Functions**](/om-functions/introduction.md): This is where you learn about the functions available in Openmadness.
+3. [**Tutorials**](/tutorials/fundamentals/basic-arithmetics.md): This is where you learn how to use Openmadness to solve real-world problems.
+4. [**Resources**](/resources/faq.md): This is where you learn about the resources available to you.
 
-- Where to go next after this guide
+::: important Prequisites
 
+To follow along with Openmadness, you should:
 
+- Basic knowledge of JavaScript (arrays, functions, etc.)
+
+- [Node.js 18 +](https://nodejs.org/en/download/)
+
+:::
 
 ## Who Should Use This Guide
 
@@ -38,39 +53,4 @@ This guide is for:
 
 - People working with arrays or numbers who want easier tools
 
-- Anyone looking for a lightweight library with a “NumPy feel” for JavaScript
-
-
-::: important Before You Begin
-
-To follow along with Openmadness, you should:
-
-- Know a little bit of JavaScript (basic functions and arrays)
-
-- Have Node.js installed (for Option 1 in the install guide)
-
-- Be ready to explore and test some simple code
-:::
-
-
-## What Is Openmadness?
-
-Openmadness is not a copy of NumPy, but it was inspired by it. It gives you tools like .sum(), .mean(), .transpose(), and .flatten() in a simple and easy way, using JavaScript.
-
-It helps you do things like:
-
-```js
-const matrix = omArray([
-  [1, 2],
-  [3, 4]
-]);
-
-const result = matrix.transpose().sum();
-
-```
-
-The code above transposes a matrix and adds up all the numbers.
-
-Want to try it out for yourself? 
-
-Head over to the Quickstart Guide to run your first example.
+- Anyone looking for a lightweight library with a “NumPy feel”

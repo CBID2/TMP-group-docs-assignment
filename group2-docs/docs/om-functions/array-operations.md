@@ -1,25 +1,14 @@
 ---
 lang: en-US
 title: "Array Operations"
-description: "This page will guide you on how to install openmadness"
+description: "Learn how to perform array operations with OpenMadness functions"
 ---
 
-## OM-Functions
+# Array Operations
 
-The main functions in the OpenMadness JavaScript library are used for:
+To perform operations on arrays, OpenMadness provides several functions.
 
-1. Array creation and manipulation
-2. Arithmetic Operation
-3. Logic
-4. Statistics
-5. Transformations
-6. Utilities
-
-## Array Operations
-
-These functions are available for creating or manipulating arrays:
-
-### 1. `mad.ones(shape)`
+## 1. `mad.ones(shape)`
 
 This creates an array filled with ones:
 
@@ -38,7 +27,7 @@ const onesColumn = ones([3, 1]);
 // Result: [[1], [1], [1]]
 ```
 
-### 2. `mad.zeros(shape)`
+## 2. `mad.zeros(shape)`
 
 This creates an array filled with zeros: 
 
@@ -57,7 +46,7 @@ const zeroMatrix = zeros([2, 2]);
 // Result: [[0, 0], [0, 0]]
 ```
 
-### 3. `mad.range(start, end, step)`
+## 3. `mad.range(start, end, step)`
 
 This generates an array containing a sequence of numbers:
 
@@ -77,7 +66,7 @@ const sequence = range(0, 10, 2);
 // Result: [0, 2, 4, 6, 8]
 ```
 
-### 4. `mad.random(shape)`
+## 4. `mad.random(shape)`
 
 Generates an array of the given shape with random values between 0 and 1:
 

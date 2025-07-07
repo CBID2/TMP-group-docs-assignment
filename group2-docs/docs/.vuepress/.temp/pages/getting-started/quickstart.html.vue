@@ -1,29 +1,7 @@
-<template><div><h2 id="quick-start" tabindex="-1"><a class="header-anchor" href="#quick-start"><span>Quick Start</span></a></h2>
-<nav class="table-of-contents"><ul><li><router-link to="#quick-start">Quick Start</router-link></li><li><router-link to="#what-is-openmadness">What is Openmadness?</router-link></li><li><router-link to="#creating-your-first-simulation">Creating Your First Simulation</router-link></li><li><router-link to="#next-steps">Next Steps</router-link></li></ul></nav>
-<p>This quickstart tutorial is intended for users new to <strong>Openmadness</strong>. It introduces the core concepts of the library and demonstrates how to perform basic operations. Whether you're building a game, creating a simulation, or experimenting with procedural generation, this guide will help you get started quickly.</p>
-<div class="hint-container note">
-<p class="hint-container-title">Note</p>
-<p>This guide assumes that you have a basic knowledge of JavaScript</p>
-</div>
-<h2 id="what-is-openmadness" tabindex="-1"><a class="header-anchor" href="#what-is-openmadness"><span>What is Openmadness?</span></a></h2>
-<p><strong>Openmadness</strong> is a lightweight JavaScript library that clarifies array-based and mathematical operations. Inspired by the <a href="https://numpy.org/" target="_blank" rel="noopener noreferrer">NumPy</a> library in Python, this project offers a JavaScript-first approach to everyday data manipulation tasks.</p>
-<p>At its core, Openmadness offers:</p>
-<ul>
-<li>
-<p>A flexible <strong>map system</strong> for defining walkable terrain and obstacles</p>
-</li>
-<li>
-<p><strong>Entities</strong> that can move and act based on logic or randomness</p>
-</li>
-<li>
-<p>A <strong>simulation loop</strong> that drives turn-based behavior</p>
-</li>
-<li>
-<p>Hooks for adding custom rules, triggers, and effects</p>
-</li>
-</ul>
+<template><div><h1 id="quick-start" tabindex="-1"><a class="header-anchor" href="#quick-start"><span>Quick Start</span></a></h1>
+<p>This quickstart tutorial is intended for users new to <strong>OpenMadness</strong>. It introduces the core concepts of the library and demonstrates how to perform basic operations. Whether you're building a game, creating a simulation, or experimenting with procedural generation, this guide will help you get started quickly.</p>
 <h2 id="creating-your-first-simulation" tabindex="-1"><a class="header-anchor" href="#creating-your-first-simulation"><span>Creating Your First Simulation</span></a></h2>
-<p>To begin, we’ll set up a simple simulation world with one entity that moves randomly. This will introduce you to the basic structure of an Openmadness program.</p>
+<p>You will learn how to create a simple simulation that moves randomly using Openmadness. This will introduce you to the basic structure of an Openmadness program.</p>
 <div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js"><pre v-pre><code><span class="line"><span class="token keyword">import</span> <span class="token punctuation">{</span> Engine<span class="token punctuation">,</span> World<span class="token punctuation">,</span> Entity<span class="token punctuation">,</span> RandomMover <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'openmadness'</span><span class="token punctuation">;</span></span>
 <span class="line"></span>
 <span class="line"><span class="token comment">// Step 1: Create a simple 5x5 world with open terrain (represented by 0s)</span></span>
@@ -56,7 +34,7 @@
 <span class="line">  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Turn </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">: Player is at (</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>player<span class="token punctuation">.</span>x<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">, </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>player<span class="token punctuation">.</span>y<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">)</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"><span class="token punctuation">}</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>In this example, we:</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>In this example, you:</p>
 <ul>
 <li>
 <p>Defined a <strong>5x5 grid</strong> of walkable terrain (where <code v-pre>0</code> might represent a floor tile).</p>
@@ -71,10 +49,13 @@
 <h2 id="next-steps" tabindex="-1"><a class="header-anchor" href="#next-steps"><span><strong>Next Steps</strong></span></a></h2>
 <p>Congratulations! You just created your first simulation! 👍 Now that you have gotten the basics down, consider picking the following:</p>
 <ul>
-<li>Guides</li>
-<li>Tutorials</li>
+<li><RouteLink to="/guides/fundamentals/array-elements.html">Guides</RouteLink></li>
+<li><RouteLink to="/tutorials/fundamentals/basic-arithmetics.html">Tutorials</RouteLink></li>
 </ul>
-<p>Got any ideas to improve the guide, check out our CONTRIBUTING guide on GitHub.</p>
+<div class="hint-container tip">
+<p class="hint-container-title">Tips</p>
+<p>Got any ideas to improve the guide, check out our CONTRIBUTING guide on <a href="https://github.com/Dev-Liz/Product-docs-cohort-1" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+</div>
 </div></template>
 
 

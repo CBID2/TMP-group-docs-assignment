@@ -3,9 +3,11 @@ import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
-  lang: 'en-US',
-
-  description: 'My first VuePress Site',
+lang: 'en-US',
+head: [
+  ['link', { rel: 'icon', href: '/openmadness-icon.png' }] 
+],
+description: 'My first VuePress Site',
 
   theme: defaultTheme({
     logo: '/om-logo-dark.svg',
@@ -24,6 +26,10 @@ export default defineUserConfig({
       {
         text: 'Getting Started',
         link: '/getting-started/introduction.md',
+      },
+      {
+        text: 'OM-Functions',
+        link: '/om-functions/introduction.md',
       },
       // NavbarGroup
       {
@@ -54,12 +60,9 @@ export default defineUserConfig({
                 text: 'Advanced',
                 link: 'tutorials/advanced/building-a-network.md',
               },
+
           ],
         },
-      {
-        text: 'OM-Functions',
-        link: '/om-functions/arithmetic-operations.md',
-      },
       {
         text: 'Resources',
         children: [

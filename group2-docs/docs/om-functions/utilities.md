@@ -1,16 +1,16 @@
 ---
 lang: en-US
 title: "Utilities"
-description: "This page will guide you on how to install openmadness"
+description: "Learn about the utility functions in OpenMadness"
 ---
 
-## Utilities
+# Utilities
 
-These functions assist with array handling and display tasks:
+These functions are use to perform operations that change the shape or structure of an array without altering its data. To perform transformations, you can use the following functions:
 
-### 1. `mad.clone(array)`
+## 1. `mad.clone(array)`
 
-Creates a deep copy of an array:
+To creates a deep copy of an array:
 
 | Parameter |  Type |     Description     |
 |:---------:|:-----:|:-------------------:|
@@ -27,9 +27,9 @@ const newArray = clone([1, 2, 3]);
 // Result: [1, 2, 3]
 ```
 
-### 2. `mad.print(array)`
+## 2. `mad.print(array)`
 
-Prints the array to the console in a readable format:
+To prints the result to the console in a readable format:
 
 | Parameter |  Type |    Description   |
 |:---------:|:-----:|:----------------:|
@@ -46,9 +46,9 @@ print(array);
 // Console: [ [1, 2], [3, 4] ]
 ```
 
-### 3. `mad.toArray(madArray)`
+## 3. `mad.toArray(madArray)`
 
-Converts a mad array into a plain JavaScript array:
+To converts a mad array into a plain JavaScript array:
 
 | Parameter |    Type    |         Description         |
 |:---------:|:----------:|:---------------------------:|

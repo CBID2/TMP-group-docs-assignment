@@ -1,7 +1,7 @@
-<template><div><h2 id="utilities" tabindex="-1"><a class="header-anchor" href="#utilities"><span>Utilities</span></a></h2>
-<p>These functions assist with array handling and display tasks:</p>
-<h3 id="_1-mad-clone-array" tabindex="-1"><a class="header-anchor" href="#_1-mad-clone-array"><span>1. <code v-pre>mad.clone(array)</code></span></a></h3>
-<p>Creates a deep copy of an array:</p>
+<template><div><h1 id="utilities" tabindex="-1"><a class="header-anchor" href="#utilities"><span>Utilities</span></a></h1>
+<p>These functions are use to perform operations that change the shape or structure of an array without altering its data. To perform transformations, you can use the following functions:</p>
+<h2 id="_1-mad-clone-array" tabindex="-1"><a class="header-anchor" href="#_1-mad-clone-array"><span>1. <code v-pre>mad.clone(array)</code></span></a></h2>
+<p>To creates a deep copy of an array:</p>
 <table>
 <thead>
 <tr>
@@ -34,8 +34,8 @@
 <span class="line"><span class="token keyword">const</span> newArray <span class="token operator">=</span> <span class="token function">clone</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"><span class="token comment">// Result: [1, 2, 3]</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-mad-print-array" tabindex="-1"><a class="header-anchor" href="#_2-mad-print-array"><span>2. <code v-pre>mad.print(array)</code></span></a></h3>
-<p>Prints the array to the console in a readable format:</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_2-mad-print-array" tabindex="-1"><a class="header-anchor" href="#_2-mad-print-array"><span>2. <code v-pre>mad.print(array)</code></span></a></h2>
+<p>To prints the result to the console in a readable format:</p>
 <table>
 <thead>
 <tr>
@@ -68,8 +68,8 @@
 <span class="line"><span class="token function">print</span><span class="token punctuation">(</span>array<span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"><span class="token comment">// Console: [ [1, 2], [3, 4] ]</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-mad-toarray-madarray" tabindex="-1"><a class="header-anchor" href="#_3-mad-toarray-madarray"><span>3. <code v-pre>mad.toArray(madArray)</code></span></a></h3>
-<p>Converts a mad array into a plain JavaScript array:</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_3-mad-toarray-madarray" tabindex="-1"><a class="header-anchor" href="#_3-mad-toarray-madarray"><span>3. <code v-pre>mad.toArray(madArray)</code></span></a></h2>
+<p>To converts a mad array into a plain JavaScript array:</p>
 <table>
 <thead>
 <tr>

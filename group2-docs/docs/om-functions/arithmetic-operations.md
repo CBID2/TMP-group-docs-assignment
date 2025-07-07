@@ -1,16 +1,16 @@
 ---
 lang: en-US
-title: "Arithmetic Operations"
-description: "This page will guide you on how to install openmadness"
+title: "Arthimetric Operations"
+description: "Learn how to perform arithmetic operations with OpenMadness functions"
 ---
 
-## Arthimetric Operations
+# Arithmetic Operations
 
-These functions are used to perform arithmetic operations on arrays.
+To perform arithmetic operations, you can use the following functions:
 
-### 1. `mad.add(a, b)`
+## 1. `mad.add(a, b)`
 
-Adds two arrays element-wise:
+To add two arrays element-wise:
 
 | Parameter |  Type |           Description          |
 |:---------:|:-----:|:------------------------------:|
@@ -26,9 +26,9 @@ add([1, 2], [3, 4]);
 // Result: [4, 6]
 ```
 
-### 2. `mad.subtract(a, b)`
+## 2. `mad.subtract(a, b)`
 
-Subtracts the second array from the first, element-wise:
+To subtracts the second array from the first, element-wise:
 
 | Parameter |  Type |            Description            |
 |:---------:|:-----:|:---------------------------------:|
@@ -44,9 +44,9 @@ subtract([5, 6], [2, 3]);
 // Result: [3, 3]
 ```
 
-### 3. `mad.multiply(a, b)`
+## 3. `mad.multiply(a, b)`
 
-Multiplies two arrays element-wise:
+To multiplies two arrays element-wise:
 
 | Parameter |  Type |              Description             |
 |:---------:|:-----:|:------------------------------------:|
@@ -62,9 +62,9 @@ multiply([2, 3], [4, 5]);
 // Result: [8, 15]
 ```
 
-### 4. `mad.divide(a, b)`
+## 4. `mad.divide(a, b)`
 
-Divides the first array by the second, element-wise:
+To divides the first array by the second, element-wise:
 
 | Parameter |  Type |           Description          |
 |:---------:|:-----:|:------------------------------:|
@@ -80,9 +80,9 @@ divide([10, 20], [2, 5]);
 // Result: [5, 4]
 ```
 
-### 5. `mad.pow(a, b)`
+## 5. `mad.pow(a, b)`
 
-Raises each element in a to the power of the corresponding element or scalar `b`:
+To raises each element in a to the power of the corresponding element or scalar `b`:
 
 | Parameter |       Type      |          Description          |
 |:---------:|:---------------:|:-----------------------------:|

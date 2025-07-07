@@ -1,7 +1,7 @@
-<template><div><h2 id="arthimetric-operations" tabindex="-1"><a class="header-anchor" href="#arthimetric-operations"><span>Arthimetric Operations</span></a></h2>
-<p>These functions are used to perform arithmetic operations on arrays.</p>
-<h3 id="_1-mad-add-a-b" tabindex="-1"><a class="header-anchor" href="#_1-mad-add-a-b"><span>1. <code v-pre>mad.add(a, b)</code></span></a></h3>
-<p>Adds two arrays element-wise:</p>
+<template><div><h1 id="arithmetic-operations" tabindex="-1"><a class="header-anchor" href="#arithmetic-operations"><span>Arithmetic Operations</span></a></h1>
+<p>To perform arithmetic operations, you can use the following functions:</p>
+<h2 id="_1-mad-add-a-b" tabindex="-1"><a class="header-anchor" href="#_1-mad-add-a-b"><span>1. <code v-pre>mad.add(a, b)</code></span></a></h2>
+<p>To add two arrays element-wise:</p>
 <table>
 <thead>
 <tr>
@@ -29,8 +29,8 @@
 <span class="line"><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"><span class="token comment">// Result: [4, 6]</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-mad-subtract-a-b" tabindex="-1"><a class="header-anchor" href="#_2-mad-subtract-a-b"><span>2. <code v-pre>mad.subtract(a, b)</code></span></a></h3>
-<p>Subtracts the second array from the first, element-wise:</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_2-mad-subtract-a-b" tabindex="-1"><a class="header-anchor" href="#_2-mad-subtract-a-b"><span>2. <code v-pre>mad.subtract(a, b)</code></span></a></h2>
+<p>To subtracts the second array from the first, element-wise:</p>
 <table>
 <thead>
 <tr>
@@ -58,8 +58,8 @@
 <span class="line"><span class="token function">subtract</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"><span class="token comment">// Result: [3, 3]</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-mad-multiply-a-b" tabindex="-1"><a class="header-anchor" href="#_3-mad-multiply-a-b"><span>3. <code v-pre>mad.multiply(a, b)</code></span></a></h3>
-<p>Multiplies two arrays element-wise:</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_3-mad-multiply-a-b" tabindex="-1"><a class="header-anchor" href="#_3-mad-multiply-a-b"><span>3. <code v-pre>mad.multiply(a, b)</code></span></a></h2>
+<p>To multiplies two arrays element-wise:</p>
 <table>
 <thead>
 <tr>
@@ -87,8 +87,8 @@
 <span class="line"><span class="token function">multiply</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"><span class="token comment">// Result: [8, 15]</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_4-mad-divide-a-b" tabindex="-1"><a class="header-anchor" href="#_4-mad-divide-a-b"><span>4. <code v-pre>mad.divide(a, b)</code></span></a></h3>
-<p>Divides the first array by the second, element-wise:</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_4-mad-divide-a-b" tabindex="-1"><a class="header-anchor" href="#_4-mad-divide-a-b"><span>4. <code v-pre>mad.divide(a, b)</code></span></a></h2>
+<p>To divides the first array by the second, element-wise:</p>
 <table>
 <thead>
 <tr>
@@ -116,8 +116,8 @@
 <span class="line"><span class="token function">divide</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"><span class="token comment">// Result: [5, 4]</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_5-mad-pow-a-b" tabindex="-1"><a class="header-anchor" href="#_5-mad-pow-a-b"><span>5. <code v-pre>mad.pow(a, b)</code></span></a></h3>
-<p>Raises each element in a to the power of the corresponding element or scalar <code v-pre>b</code>:</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_5-mad-pow-a-b" tabindex="-1"><a class="header-anchor" href="#_5-mad-pow-a-b"><span>5. <code v-pre>mad.pow(a, b)</code></span></a></h2>
+<p>To raises each element in a to the power of the corresponding element or scalar <code v-pre>b</code>:</p>
 <table>
 <thead>
 <tr>
