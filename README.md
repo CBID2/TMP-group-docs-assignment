@@ -1,7 +1,4 @@
- OpenMadness
-
-**Tame Your Data. Unleash Your Code.**  
-*Your JavaScript Data, Simplified.*
+# Welcome to OpenMadness Product Documentation 👋
 
 OpenMadness is a lightweight JavaScript library that simplifies mathematical and array-based operations. Inspired by the power of NumPy, it provides a clear, chainable, and flexible API designed for developers working with data in both frontend and backend environments.
 
@@ -97,9 +94,9 @@ npm run test
 
 ## Documentation
 
-You can find the [Open Madness]() documentation on the website.
+You can find the [Openmadness](https://openmadness-docs.vercel.app/) documentation on the website.
 
-Check out the [Getting Started]() page for a quick overview.
+Check out the [Getting Started](https://openmadness-docs.vercel.app/getting-started/introduction.html) page for a quick overview.
 
 The documentation is divided into several sections:
 
@@ -129,6 +126,25 @@ Facebook has adopted a Code of Conduct that we expect project participants to ad
 ### Contributing Guide
 Read our contributing guide to learn about our development process, how to propose bugfixes and improvements, and how to build and test your changes to React.
 See [CONTRIBUTING-GUIDE.md](CONTRIBUTING-GUIDE.md) to get started contributing!
+
+### Our Primary Contributors
+Here's a list of amazing talents who worked together to make this project a success:
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+
+
+
+
 
 ## License
 
