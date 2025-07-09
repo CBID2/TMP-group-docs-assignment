@@ -75,7 +75,7 @@ In this example, we:
 
 Congratulations! You just created your first simulation! 👍 Now that you have gotten the basics down, consider picking the following:
 
-* Guides  
-* Tutorials
+* [Guides](/group2-docs/docs/guides.md)
+* [Tutorials](/group2-docs/docs/tutorials.md)
 
 Got any ideas to improve the guide, check out our CONTRIBUTING guide on GitHub.
