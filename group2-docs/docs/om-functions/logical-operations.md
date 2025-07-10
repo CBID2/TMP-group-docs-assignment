@@ -8,7 +8,7 @@ description: "This page will guide you on how to install openmadness"
 
 To perform logical operations in OpenMadness, you can use the following functions:
 
-## 1. `mad.equal(a, b)`
+## 1. `.equal(a, b)`
 
 Checks element-wise equality:
 
@@ -26,7 +26,7 @@ equal([1, 2], [1, 3]);
 // Result: [true, false]
 ```
 
-## 2. `mad.greater(a, b)`
+## 2. `.greater(a, b)`
 
 Checks if elements in `a` are greater than corresponding elements in `b`:
 
@@ -44,7 +44,7 @@ greater([4, 2], [3, 3]);
 // Result: [true, false]
 ```
 
-## 3. `mad.where(condition, a, b)`
+## 3. `.where(condition, a, b)`
 
 Returns elements from `a` where the condition is true, otherwise from `b`:
 

@@ -33,7 +33,7 @@ description: 'My first VuePress Site',
       },
       // NavbarGroup
       {
-        text: 'Tutorials',
+        text: 'Operation',
         children: [
               {
                 text: 'Fundamentals',
@@ -82,6 +82,10 @@ description: 'My first VuePress Site',
         },
       // string - page file path
       'changelog.md',
+      {
+        text: 'Github',
+        link: 'https://github.com/Dev-Liz/Product-docs-cohort-1',
+      },
     ],  
     
     sidebar: {

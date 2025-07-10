@@ -8,7 +8,7 @@ description: "Learn about how to transform data in OpenMadness"
 
 These functions are use to perform operations that change the shape or structure of an array without altering its data. To perform transformations, you can use the following functions:
 
-## 1. `mad.reshape(array, newShape)`
+### 1. `.reshape(array, newShape)`
 
 To reshapes an array to the specified shape:
 
@@ -27,7 +27,7 @@ reshape([1, 2, 3, 4], [2, 2]);
 // Result: [[1, 2], [3, 4]]
 ```
 
-## 2. `mad.flatten(array)`
+### 2. `.flatten(array)`
 
 To flattens a nested array into a 1D array:
 
@@ -46,7 +46,7 @@ flatten([[1, 2], [3, 4]]);
 // Result: [1, 2, 3, 4]
 ```
 
-### 3. `mad.transpose(array)`
+### 3. `.transpose(array)`
 
 To transposes a 2D array (rows become columns):
 

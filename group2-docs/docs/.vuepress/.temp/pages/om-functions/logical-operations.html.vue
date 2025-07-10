@@ -1,6 +1,6 @@
 <template><div><h1 id="logical-operations" tabindex="-1"><a class="header-anchor" href="#logical-operations"><span>Logical Operations</span></a></h1>
 <p>To perform logical operations in OpenMadness, you can use the following functions:</p>
-<h2 id="_1-mad-equal-a-b" tabindex="-1"><a class="header-anchor" href="#_1-mad-equal-a-b"><span>1. <code v-pre>mad.equal(a, b)</code></span></a></h2>
+<h2 id="_1-equal-a-b" tabindex="-1"><a class="header-anchor" href="#_1-equal-a-b"><span>1. <code v-pre>.equal(a, b)</code></span></a></h2>
 <p>Checks element-wise equality:</p>
 <table>
 <thead>
@@ -29,7 +29,7 @@
 <span class="line"><span class="token function">equal</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"><span class="token comment">// Result: [true, false]</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_2-mad-greater-a-b" tabindex="-1"><a class="header-anchor" href="#_2-mad-greater-a-b"><span>2. <code v-pre>mad.greater(a, b)</code></span></a></h2>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_2-greater-a-b" tabindex="-1"><a class="header-anchor" href="#_2-greater-a-b"><span>2. <code v-pre>.greater(a, b)</code></span></a></h2>
 <p>Checks if elements in <code v-pre>a</code> are greater than corresponding elements in <code v-pre>b</code>:</p>
 <table>
 <thead>
@@ -58,7 +58,7 @@
 <span class="line"><span class="token function">greater</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"><span class="token comment">// Result: [true, false]</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_3-mad-where-condition-a-b" tabindex="-1"><a class="header-anchor" href="#_3-mad-where-condition-a-b"><span>3. <code v-pre>mad.where(condition, a, b)</code></span></a></h2>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_3-where-condition-a-b" tabindex="-1"><a class="header-anchor" href="#_3-where-condition-a-b"><span>3. <code v-pre>.where(condition, a, b)</code></span></a></h2>
 <p>Returns elements from <code v-pre>a</code> where the condition is true, otherwise from <code v-pre>b</code>:</p>
 <table>
 <thead>

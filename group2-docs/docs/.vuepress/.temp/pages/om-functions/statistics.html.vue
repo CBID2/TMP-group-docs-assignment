@@ -1,6 +1,6 @@
 <template><div><h1 id="statistics" tabindex="-1"><a class="header-anchor" href="#statistics"><span>Statistics</span></a></h1>
 <p>To perform statistical operations, you can use the following functions:</p>
-<h2 id="_1-mad-sum-array" tabindex="-1"><a class="header-anchor" href="#_1-mad-sum-array"><span>1. <code v-pre>mad.sum(array)</code></span></a></h2>
+<h3 id="_1-sum-array" tabindex="-1"><a class="header-anchor" href="#_1-sum-array"><span>1. <code v-pre>.sum(array)</code></span></a></h3>
 <p>To returns the sum of all elements:</p>
 <table>
 <thead>
@@ -29,7 +29,7 @@
 <span class="line"><span class="token function">sum</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"><span class="token comment">// Result: 6</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-mad-mean-array" tabindex="-1"><a class="header-anchor" href="#_2-mad-mean-array"><span>2. <code v-pre>mad.mean(array)</code></span></a></h3>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-mean-array" tabindex="-1"><a class="header-anchor" href="#_2-mean-array"><span>2. <code v-pre>.mean(array)</code></span></a></h3>
 <p>To calculates the mean (average) of elements:</p>
 <table>
 <thead>
@@ -58,7 +58,7 @@
 <span class="line"><span class="token function">mean</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"><span class="token comment">// Result: 2</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-mad-std-array" tabindex="-1"><a class="header-anchor" href="#_3-mad-std-array"><span>3. <code v-pre>mad.std(array)</code></span></a></h3>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-std-array" tabindex="-1"><a class="header-anchor" href="#_3-std-array"><span>3. <code v-pre>.std(array)</code></span></a></h3>
 <p>To computes the standard deviation of the array:</p>
 <table>
 <thead>
@@ -87,7 +87,7 @@
 <span class="line"><span class="token function">std</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"><span class="token comment">// Result: ~0.82 (sample-dependent)</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_4-mad-median-array" tabindex="-1"><a class="header-anchor" href="#_4-mad-median-array"><span>4. <code v-pre>mad.median(array)</code></span></a></h3>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_4-median-array" tabindex="-1"><a class="header-anchor" href="#_4-median-array"><span>4. <code v-pre>.median(array)</code></span></a></h3>
 <p>To finds the median value:</p>
 <table>
 <thead>

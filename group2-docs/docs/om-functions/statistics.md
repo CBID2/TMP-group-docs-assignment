@@ -7,7 +7,7 @@ description: "Learn about the statistical operation with OpenMadness functions"
 
 To perform statistical operations, you can use the following functions:
 
-## 1. `mad.sum(array)`
+### 1. `.sum(array)`
 
 To returns the sum of all elements:
 
@@ -25,7 +25,7 @@ sum([1, 2, 3]);
 // Result: 6
 ```
 
-### 2. `mad.mean(array)`
+### 2. `.mean(array)`
 
 To calculates the mean (average) of elements:
 
@@ -43,7 +43,7 @@ mean([1, 2, 3]);
 // Result: 2
 ```
 
-### 3. `mad.std(array)`
+### 3. `.std(array)`
 
 To computes the standard deviation of the array:
 
@@ -61,7 +61,7 @@ std([1, 2, 3]);
 // Result: ~0.82 (sample-dependent)
 ```
 
-### 4. `mad.median(array)`
+### 4. `.median(array)`
 
 To finds the median value:
 

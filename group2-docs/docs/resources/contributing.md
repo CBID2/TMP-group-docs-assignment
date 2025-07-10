@@ -9,20 +9,6 @@ description: "This page will guide you on how to install openmadness"
 
 Thank you for your interest in contributing to **Open Madness**! Whether you're spotting typos, improving docs, or adding new features, your help is greatly appreciated. 😊
 
-## Table of Contents
-
-- [How Can I Contribute?](#how-can-i-contribute)
-- [Good First Issues & Where to Look](#good-first-issues--where-to-look)
-- [Reporting Bugs or Typos](#reporting-bugs-or-typos)
-- [Submitting Changes (Pull Requests)](#submitting-changes-pull-requests)
-- [Development Setup](#development-setup)
-- [Coding & Formatting Standards](#coding--formatting-standards)
-- [Commit Message Guidelines](#commit-message-guidelines)
-- [Review Process](#review-process)
-- [Non‑Code Contributions](#non‑code-contributions)
-- [Code of Conduct](#code-of-conduct)
-- [Contact & Communication](#contact--communication)
-
 ---
 
 ## How Can I Contribute?

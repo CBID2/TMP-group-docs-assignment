@@ -8,7 +8,7 @@ description: "Learn how to perform array operations with OpenMadness functions"
 
 To perform operations on arrays, OpenMadness provides several functions.
 
-## 1. `mad.ones(shape)`
+## 1. `.ones(shape)`
 
 This creates an array filled with ones:
 
@@ -27,7 +27,7 @@ const onesColumn = ones([3, 1]);
 // Result: [[1], [1], [1]]
 ```
 
-## 2. `mad.zeros(shape)`
+## 2. `.zeros(shape)`
 
 This creates an array filled with zeros: 
 
@@ -46,7 +46,7 @@ const zeroMatrix = zeros([2, 2]);
 // Result: [[0, 0], [0, 0]]
 ```
 
-## 3. `mad.range(start, end, step)`
+## 3. `.range(start, end, step)`
 
 This generates an array containing a sequence of numbers:
 
@@ -66,7 +66,7 @@ const sequence = range(0, 10, 2);
 // Result: [0, 2, 4, 6, 8]
 ```
 
-## 4. `mad.random(shape)`
+## 4. `.random(shape)`
 
 Generates an array of the given shape with random values between 0 and 1:
 

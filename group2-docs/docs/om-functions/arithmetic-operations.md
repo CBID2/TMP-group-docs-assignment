@@ -8,7 +8,7 @@ description: "Learn how to perform arithmetic operations with OpenMadness functi
 
 To perform arithmetic operations, you can use the following functions:
 
-## 1. `mad.add(a, b)`
+## 1. `.add(a, b)`
 
 To add two arrays element-wise:
 
@@ -26,7 +26,7 @@ add([1, 2], [3, 4]);
 // Result: [4, 6]
 ```
 
-## 2. `mad.subtract(a, b)`
+## 2. `.subtract(a, b)`
 
 To subtracts the second array from the first, element-wise:
 
@@ -44,7 +44,7 @@ subtract([5, 6], [2, 3]);
 // Result: [3, 3]
 ```
 
-## 3. `mad.multiply(a, b)`
+## 3. `.multiply(a, b)`
 
 To multiplies two arrays element-wise:
 
@@ -62,7 +62,7 @@ multiply([2, 3], [4, 5]);
 // Result: [8, 15]
 ```
 
-## 4. `mad.divide(a, b)`
+## 4. `.divide(a, b)`
 
 To divides the first array by the second, element-wise:
 
@@ -80,7 +80,7 @@ divide([10, 20], [2, 5]);
 // Result: [5, 4]
 ```
 
-## 5. `mad.pow(a, b)`
+## 5. `.pow(a, b)`
 
 To raises each element in a to the power of the corresponding element or scalar `b`:
 

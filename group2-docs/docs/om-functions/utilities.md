@@ -8,7 +8,7 @@ description: "Learn about the utility functions in OpenMadness"
 
 These functions are use to perform operations that change the shape or structure of an array without altering its data. To perform transformations, you can use the following functions:
 
-## 1. `mad.clone(array)`
+## 1. `.clone(array)`
 
 To creates a deep copy of an array:
 
@@ -27,7 +27,7 @@ const newArray = clone([1, 2, 3]);
 // Result: [1, 2, 3]
 ```
 
-## 2. `mad.print(array)`
+## 2. `.print(array)`
 
 To prints the result to the console in a readable format:
 
@@ -46,7 +46,7 @@ print(array);
 // Console: [ [1, 2], [3, 4] ]
 ```
 
-## 3. `mad.toArray(madArray)`
+## 3. `.omArray(madArray)`
 
 To converts a mad array into a plain JavaScript array:
 
@@ -58,7 +58,7 @@ To converts a mad array into a plain JavaScript array:
 **Example**:
 
 ```js
-import { toArray, zeros } from 'openmadness';
+import { omArray, zeros } from 'openmadness';
 
 const jsArray = toArray(zeros([2, 2]));
 // Result: [[0, 0], [0, 0]]

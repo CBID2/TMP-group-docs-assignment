@@ -49,8 +49,6 @@ To follow along with Openmadness, you should:
 
 This guide is for:
 
-- New developers learning JavaScript
-
-- People working with arrays or numbers who want easier tools
-
-- Anyone looking for a lightweight library with a “NumPy feel”
+- Data scientists and analysts who want to use JavaScript for data manipulation
+- Developers who want to use JavaScript for numerical computing
+- Anyone who wants to learn about JavaScript-based numerical computing

@@ -8,8 +8,6 @@ description: "This page will guide you on how to install openmadness"
 
 The glossary section provides definitions for key terms and concepts used in the OpenMadness JavaScript library, designed to help you understand its functionality for fast and intuitive array and math operations. Terms are listed alphabetically for easy reference.
 
-[[toc]]
-
 ## Array
 
 A data structure in JavaScript that stores an ordered collection of elements, which can be of any data type (e.g., numbers, strings, objects). OpenMadness provides methods to perform operations like filtering, sorting, and mapping on arrays efficiently.
@@ -60,6 +58,10 @@ A reusable piece of JavaScript code, often exported as a single unit. OpenMadnes
 ## npm
 
 Node Package Manager, a tool for installing and managing JavaScript libraries. OpenMadness can be installed using npm install openmadness for use in Node.js or browser projects.
+
+## OM
+
+OM is the abbreviation for OpenMadness.
 
 ## Promise
 

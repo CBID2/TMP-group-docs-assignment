@@ -37,15 +37,9 @@
 <h2 id="who-should-use-this-guide" tabindex="-1"><a class="header-anchor" href="#who-should-use-this-guide"><span>Who Should Use This Guide</span></a></h2>
 <p>This guide is for:</p>
 <ul>
-<li>
-<p>New developers learning JavaScript</p>
-</li>
-<li>
-<p>People working with arrays or numbers who want easier tools</p>
-</li>
-<li>
-<p>Anyone looking for a lightweight library with a “NumPy feel”</p>
-</li>
+<li>Data scientists and analysts who want to use JavaScript for data manipulation</li>
+<li>Developers who want to use JavaScript for numerical computing</li>
+<li>Anyone who wants to learn about JavaScript-based numerical computing</li>
 </ul>
 </div></template>
 

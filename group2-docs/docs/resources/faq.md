@@ -6,7 +6,6 @@ description: "This page will guide you on how to install openmadness"
 
 
 # FAQ
-[[toc]]
 
 ## What’s the difference between OpenMadness and vanilla JavaScript array methods?
 

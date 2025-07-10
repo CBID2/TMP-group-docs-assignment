@@ -1,6 +1,6 @@
 <template><div><h1 id="transformations" tabindex="-1"><a class="header-anchor" href="#transformations"><span>Transformations</span></a></h1>
 <p>These functions are use to perform operations that change the shape or structure of an array without altering its data. To perform transformations, you can use the following functions:</p>
-<h2 id="_1-mad-reshape-array-newshape" tabindex="-1"><a class="header-anchor" href="#_1-mad-reshape-array-newshape"><span>1. <code v-pre>mad.reshape(array, newShape)</code></span></a></h2>
+<h3 id="_1-reshape-array-newshape" tabindex="-1"><a class="header-anchor" href="#_1-reshape-array-newshape"><span>1. <code v-pre>.reshape(array, newShape)</code></span></a></h3>
 <p>To reshapes an array to the specified shape:</p>
 <table>
 <thead>
@@ -34,7 +34,7 @@
 <span class="line"><span class="token function">reshape</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"><span class="token comment">// Result: [[1, 2], [3, 4]]</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_2-mad-flatten-array" tabindex="-1"><a class="header-anchor" href="#_2-mad-flatten-array"><span>2. <code v-pre>mad.flatten(array)</code></span></a></h2>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-flatten-array" tabindex="-1"><a class="header-anchor" href="#_2-flatten-array"><span>2. <code v-pre>.flatten(array)</code></span></a></h3>
 <p>To flattens a nested array into a 1D array:</p>
 <table>
 <thead>
@@ -68,7 +68,7 @@
 <span class="line"><span class="token function">flatten</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"><span class="token comment">// Result: [1, 2, 3, 4]</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-mad-transpose-array" tabindex="-1"><a class="header-anchor" href="#_3-mad-transpose-array"><span>3. <code v-pre>mad.transpose(array)</code></span></a></h3>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-transpose-array" tabindex="-1"><a class="header-anchor" href="#_3-transpose-array"><span>3. <code v-pre>.transpose(array)</code></span></a></h3>
 <p>To transposes a 2D array (rows become columns):</p>
 <table>
 <thead>
