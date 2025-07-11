@@ -77,20 +77,6 @@
 </ul>
 <p>Let us know how you'd like to help!</p>
 <hr>
-<h2 id="code-of-conduct" tabindex="-1"><a class="header-anchor" href="#code-of-conduct"><span>Code of Conduct</span></a></h2>
-<p>Please follow our <a href="https://www.contributor-covenant.org/version/2/1/code_of_conduct/" target="_blank" rel="noopener noreferrer">CODE_OF_CONDUCT.md</a> to help maintain a respectful, inclusive community.</p>
-<hr>
-<h2 id="contact-communication" tabindex="-1"><a class="header-anchor" href="#contact-communication"><span>Contact &amp; Communication</span></a></h2>
-<p>Need help or want to suggest something?</p>
-<ul>
-<li>Join us on Discord/Slack: [invite link]</li>
-<li>Post an issue with the <strong>discussion</strong> or <strong>help wanted</strong> label</li>
-<li>Reach out to maintainers: wisdom@openmadness.com</li>
-</ul>
-<p>Let’s make Open Madness amazing—together!</p>
-<hr>
-<p><strong>Add to README.md</strong>: Under “Contributing” in your README, link to this file:<br>
-<code v-pre>See [CONTRIBUTING.md](CONTRIBUTING.md) to get started contributing!</code></p>
 </div></template>
 
 

@@ -118,23 +118,3 @@ Let us know how you'd like to help!
 
 ---
 
-## Code of Conduct
-
-Please follow our [CODE_OF_CONDUCT.md](https://www.contributor-covenant.org/version/2/1/code_of_conduct/) to help maintain a respectful, inclusive community.
-
----
-
-## Contact & Communication
-
-Need help or want to suggest something?
-
-- Join us on Discord/Slack: [invite link]
-- Post an issue with the **discussion** or **help wanted** label
-- Reach out to maintainers: wisdom@openmadness.com
-
-Let’s make Open Madness amazing—together!
-
----
-
-**Add to README.md**: Under “Contributing” in your README, link to this file:  
-`See [CONTRIBUTING.md](CONTRIBUTING.md) to get started contributing!`

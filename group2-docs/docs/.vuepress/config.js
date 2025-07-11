@@ -1,13 +1,22 @@
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
+import { searchPlugin } from '@vuepress/plugin-search'
+
 
 export default defineUserConfig({
-lang: 'en-US',
-head: [
-  ['link', { rel: 'icon', href: '/openmadness-icon.png' }] 
-],
-description: 'My first VuePress Site',
+  lang: 'en-US',
+  head: [
+    ['link', { rel: 'icon', href: '/openmadness-icon.png' }] 
+  ],
+  description: 'My first VuePress Site',
+  
+  plugins: [
+      searchPlugin({
+        isSearchable: (page) => page.path !== '/',
+        getExtraFields: (page) => page.frontmatter.tags ?? [],
+    }),
+  ],
 
   theme: defaultTheme({
     logo: '/om-logo-dark.svg',
