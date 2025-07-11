@@ -132,7 +132,7 @@ Here's a list of amazing talents who worked together to make this project a succ
 - [Elizabeth Bassey](https://github.com/Dev-Liz/) - Homepage, Changelog, Brand-Identity
 - [Christine Belzie](https://github.com/CBID2) - Quickstart Guide & Edit buttons
 - [Judith Etugbo](https://github.com/Nickyshe) - Advanced Tutorials
-- [Mercy Ileolami](https://github.com/Ileolami) - OM Functions - Content Review
+- [Mercy Ileolami](https://github.com/Ileolami) - OM Functions & Content Review
 - [Onwuemene Joshua](https://github.com/onwuemenejoshua) - FAQ & Glossary
 - [Samuel Thomas](https://github.com/Sammex45) - Project's Readme
 - [Olubisi Folarin](https://github.com/olubisifolarin) - OM-Functions
