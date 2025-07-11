@@ -4,14 +4,7 @@ import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
      plugins: [
-       'vuepress-plugin-contributors', {
-            showAvatar: true,
-            showCount: true,
-            avatarSize: 32,
-            defaultAvatar: '/not-found.png', 
-            avatarProvider: 'github',
-            userProfileUrlProvider: 'github'
-        }
+      
      ],
 
   lang: 'en-US',
@@ -67,13 +60,13 @@ export default defineUserConfig({
               },
               {
                 text: 'Advanced',
-                link: 'guides/advanced/building-a-network.md',
+                link: 'guides/advanced/data-broadcasting.md',
               },
           ],
         },
       {
         text: 'OM-Functions',
-        link: '/om-functions/arithmetic-operations.md',
+        link: '/om-functions/functions-overview.md',
       },
       {
         text: 'Resources',
@@ -94,6 +87,10 @@ export default defineUserConfig({
         },
       // string - page file path
       'changelog.md',
+       {
+        text: 'Github',
+        link: 'https://github.com/Dev-Liz/Product-docs-cohort-1',
+      },
     ],  
     
     sidebar: {
@@ -119,7 +116,7 @@ export default defineUserConfig({
             collapsible: true,
             prefix: 'fundamentals/',
             // for project links, .md or .html suffix is optional
-            children: ['basic-arithmetics', 'data-types', 'shapes', 'size', 'axes', 'arrays','statistics', 'logic'],
+            children: ['basic-arithmetics', 'data-types', 'arrays','shapes', 'size', 'axes','statistics', 'logic'],
           },
           {
             text: 'Advanced',
@@ -154,7 +151,7 @@ export default defineUserConfig({
             collapsible: true,
             prefix: 'advanced/',
             // for project links, .md or .html suffix is optional
-            children: ['building-a-network', 'data-broadcasting', 'mini-linear-algebra'],
+            children: ['data-broadcasting', 'building-a-network', 'mini-linear-algebra'],
           },
         ]
        }
@@ -166,6 +163,7 @@ export default defineUserConfig({
 
           // prefix will be prepended to relative paths
           children: [
+            'functions-overview.md',
             'arithmetic-operations.md', // resolved to `/guide/introduction.md`
             'array-operations.md', // resolved to `/guide/getting-started.md`
             'logical-operations.md',
@@ -193,8 +191,8 @@ export default defineUserConfig({
     editLinks: true,
 		editLinkText: "Edit this page on GitHub",
 		docsRepo: "https://github.com/Dev-Liz/Product-docs-cohort-1",
-		docsDir: "group2-docs/docs",
-		docsBranch: "group2-master",
+		docsDir: "group2-docs/",
+		docsBranch: "dev",
 }),
     
   bundler: viteBundler(),

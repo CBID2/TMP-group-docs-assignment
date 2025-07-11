@@ -1,3 +1,9 @@
+---
+lang: en-US
+title: "Changelog"
+description: "This page tracks updates in Openmadness Documentation"
+---
+
 # Changelog
 This page keeps track of Additions and Updates to the Openmadness docs
 
