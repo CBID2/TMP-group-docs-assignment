@@ -1,33 +1,32 @@
 ---
 home: true
-title: Home
-heroImage: https://vuejs.press/images/hero.png
+title: Openmandness
+heroImage: /openmadness-icon.png
+heroText: Tame Your Data, Unleash Your Code.
+heroAlt: Openmadness-logo
+tagline: Openmadness brings clarity to mathematical and array-based operations in JavaScript.
 actions:
   - text: Get Started
-    link: /get-started.html
+    link: /getting-started/introduction.md
     type: primary
 
-  - text: Introduction
-    link: https://vuejs.press/guide/introduction.html
+  - text: Tutorials
+    link: /tutorials/fundamentals/basic-arithmetics.md
     type: secondary
 
 features:
-  - title: Simplicity First
-    details: Minimal setup with markdown-centered project structure helps you focus on writing.
-  - title: Vue-Powered
-    details: Enjoy the dev experience of Vue, use Vue components in markdown, and develop custom themes with Vue.
-  - title: Performant
-    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-  - title: Themes
-    details: Providing a default theme out of the box. You can also choose a community theme or create your own one.
-  - title: Plugins
-    details: Flexible plugin API, allowing plugins to provide lots of plug-and-play features for your site.
-  - title: Bundlers
-    details: Default bundler is Vite, while Webpack is also supported. Choose the one you like!
+  - title: Simplify Complex Operations
+    details: OpenMadness makes multi-dimensional arrays, statistics, and linear algebra intuitive and easy.
+  - title: Multi-Dimensional Array Handling
+    details: Easily create, manipulate, and transform arrays of any dimension.
+  - title: Statistical Functions
+    details:  Perform common statistical calculations with ease (e.g., mean, median, standard deviation).
+  - title: Linear Algebra Operations
+    details:  Tackle vector and matrix operations effortlessly.
+  - title: Chainable Methods
+    details: Write cleaner, more readable code by chaining operations together.
+  - title: Extensible Design
+    details: Built to be flexible and adaptable to your specific needs.
 
-footer: MIT Licensed | Copyright © 2018-present VuePress Community
+footer: MIT Licensed | Copyright © TWMP Group-2 Openmadness Project.
 ---
-
-This is the content of home page. Check [Home Page Docs][default-theme-home] for more details.
-
-[default-theme-home]: https://vuejs.press/reference/default-theme/frontmatter.html#home-page

@@ -1,0 +1,97 @@
+<template><div><h1 id="logical-operations" tabindex="-1"><a class="header-anchor" href="#logical-operations"><span>Logical Operations</span></a></h1>
+<p>To perform logical operations in OpenMadness, you can use the following functions:</p>
+<h2 id="_1-equal-a-b" tabindex="-1"><a class="header-anchor" href="#_1-equal-a-b"><span>1. <code v-pre>.equal(a, b)</code></span></a></h2>
+<p>Checks element-wise equality:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Parameter</th>
+<th style="text-align:center">Type</th>
+<th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">a, b</td>
+<td style="text-align:center">Array</td>
+<td style="text-align:center">Arrays of the same shape</td>
+</tr>
+<tr>
+<td style="text-align:center">Returns</td>
+<td style="text-align:center">Array</td>
+<td style="text-align:center">Boolean array of comparisons</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong>:</p>
+<div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js"><pre v-pre><code><span class="line"><span class="token keyword">import</span> <span class="token punctuation">{</span> equal <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'openmadness'</span><span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line"><span class="token function">equal</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line"><span class="token comment">// Result: [true, false]</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_2-greater-a-b" tabindex="-1"><a class="header-anchor" href="#_2-greater-a-b"><span>2. <code v-pre>.greater(a, b)</code></span></a></h2>
+<p>Checks if elements in <code v-pre>a</code> are greater than corresponding elements in <code v-pre>b</code>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Parameter</th>
+<th style="text-align:center">Type</th>
+<th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">a, b</td>
+<td style="text-align:center">Array</td>
+<td style="text-align:center">Arrays of the same shape</td>
+</tr>
+<tr>
+<td style="text-align:center">Returns</td>
+<td style="text-align:center">Array</td>
+<td style="text-align:center">Boolean array</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong>:</p>
+<div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js"><pre v-pre><code><span class="line"><span class="token keyword">import</span> <span class="token punctuation">{</span> greater <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'openmadness'</span><span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line"><span class="token function">greater</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line"><span class="token comment">// Result: [true, false]</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_3-where-condition-a-b" tabindex="-1"><a class="header-anchor" href="#_3-where-condition-a-b"><span>3. <code v-pre>.where(condition, a, b)</code></span></a></h2>
+<p>Returns elements from <code v-pre>a</code> where the condition is true, otherwise from <code v-pre>b</code>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Parameter</th>
+<th style="text-align:center">Type</th>
+<th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">condition</td>
+<td style="text-align:center">Array</td>
+<td style="text-align:center">Boolean mask</td>
+</tr>
+<tr>
+<td style="text-align:center">a, b</td>
+<td style="text-align:center">Array</td>
+<td style="text-align:center">Arrays of values</td>
+</tr>
+<tr>
+<td style="text-align:center">Returns</td>
+<td style="text-align:center">Array</td>
+<td style="text-align:center">Resulting values from <code v-pre>a</code> or <code v-pre>b</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong>:</p>
+<div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js"><pre v-pre><code><span class="line"><span class="token keyword">import</span> <span class="token punctuation">{</span> where <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'openmadness'</span><span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line"><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line"><span class="token comment">// Result: [1, 4]</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
+
+

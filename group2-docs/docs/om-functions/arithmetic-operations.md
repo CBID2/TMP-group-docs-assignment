@@ -1,0 +1,100 @@
+---
+lang: en-US
+title: "Arthimetric Operations"
+description: "Learn how to perform arithmetic operations with OpenMadness functions"
+---
+
+# Arithmetic Operations
+
+To perform arithmetic operations, you can use the following functions:
+
+## 1. `.add(a, b)`
+
+To add two arrays element-wise:
+
+| Parameter |  Type |           Description          |
+|:---------:|:-----:|:------------------------------:|
+| a, b      | Array | Arrays of the same shape       |
+| Returns   | Array | Resulting array after addition |
+
+**Example**:
+
+```js
+import { add } from 'openmadness';
+
+add([1, 2], [3, 4]);
+// Result: [4, 6]
+```
+
+## 2. `.subtract(a, b)`
+
+To subtracts the second array from the first, element-wise:
+
+| Parameter |  Type |            Description            |
+|:---------:|:-----:|:---------------------------------:|
+| a, b      | Array | Arrays of the same shape          |
+| Returns   | Array | Resulting array after subtraction |
+
+**Example**:
+
+```js
+import { subtract } from 'openmadness';
+
+subtract([5, 6], [2, 3]);
+// Result: [3, 3]
+```
+
+## 3. `.multiply(a, b)`
+
+To multiplies two arrays element-wise:
+
+| Parameter |  Type |              Description             |
+|:---------:|:-----:|:------------------------------------:|
+| a, b      | Array | Arrays of the same shape             |
+| Returns   | Array | Resulting array after multiplication |
+
+**Example**:
+
+```js
+import { multiply } from 'openmadness';
+
+multiply([2, 3], [4, 5]);
+// Result: [8, 15]
+```
+
+## 4. `.divide(a, b)`
+
+To divides the first array by the second, element-wise:
+
+| Parameter |  Type |           Description          |
+|:---------:|:-----:|:------------------------------:|
+| a, b      | Array | Arrays of the same shape       |
+| Returns   | Array | Resulting array after division |
+
+**Example**:
+
+```js
+import { divide } from 'openmadness';
+
+divide([10, 20], [2, 5]);
+// Result: [5, 4]
+```
+
+## 5. `.pow(a, b)`
+
+To raises each element in a to the power of the corresponding element or scalar `b`:
+
+| Parameter |       Type      |          Description          |
+|:---------:|:---------------:|:-----------------------------:|
+| a         | Array           | Base values                   |
+| b         | Array or number | Exponents                     |
+| Returns   | Array           | Array of exponentiated values |
+
+**Example**:
+
+```js
+import { pow } from 'openmadness';
+
+pow([2, 3], 2);
+// Result: [4, 9]
+```
