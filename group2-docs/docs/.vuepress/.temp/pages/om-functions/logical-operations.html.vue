@@ -92,6 +92,182 @@
 <span class="line"><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"><span class="token comment">// Result: [1, 4]</span></span>
 <span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_4-and-a-b" tabindex="-1"><a class="header-anchor" href="#_4-and-a-b"><span>4. <code v-pre>.and(a, b)</code></span></a></h2>
+<p>Performs element-wise logical AND operation:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Parameter</th>
+<th style="text-align:center">Type</th>
+<th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">a, b</td>
+<td style="text-align:center">Array</td>
+<td style="text-align:center">Arrays of the same shape</td>
+</tr>
+<tr>
+<td style="text-align:center">Returns</td>
+<td style="text-align:center">Array</td>
+<td style="text-align:center">Boolean array</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong>:</p>
+<div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js"><pre v-pre><code><span class="line"><span class="token keyword">import</span> <span class="token punctuation">{</span> and <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'openmadness'</span><span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line"><span class="token function">and</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line"><span class="token comment">// Result: [true, false]</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_5-or-a-b" tabindex="-1"><a class="header-anchor" href="#_5-or-a-b"><span>5. <code v-pre>.or(a, b)</code></span></a></h2>
+<p>Performs element-wise logical OR operation:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Parameter</th>
+<th style="text-align:center">Type</th>
+<th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">a, b</td>
+<td style="text-align:center">Array</td>
+<td style="text-align:center">Arrays of the same shape</td>
+</tr>
+<tr>
+<td style="text-align:center">Returns</td>
+<td style="text-align:center">Array</td>
+<td style="text-align:center">Boolean array</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong>:</p>
+<div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js"><pre v-pre><code><span class="line"><span class="token keyword">import</span> <span class="token punctuation">{</span> or <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'openmadness'</span><span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line"><span class="token function">or</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line"><span class="token comment">// Result: [true, true]</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_6-greaterthanorequal-a-b" tabindex="-1"><a class="header-anchor" href="#_6-greaterthanorequal-a-b"><span>6. <code v-pre>.greaterThanOrEqual(a, b)</code></span></a></h2>
+<p>Checks if elements in <code v-pre>a</code> are greater than or equal to corresponding elements in <code v-pre>b</code>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Parameter</th>
+<th style="text-align:center">Type</th>
+<th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">a, b</td>
+<td style="text-align:center">Array</td>
+<td style="text-align:center">Arrays of the same shape</td>
+</tr>
+<tr>
+<td style="text-align:center">Returns</td>
+<td style="text-align:center">Array</td>
+<td style="text-align:center">Boolean array</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong>:</p>
+<div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js"><pre v-pre><code><span class="line"><span class="token keyword">import</span> <span class="token punctuation">{</span> greaterThanOrEqual <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'openmadness'</span><span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line"><span class="token function">greaterThanOrEqual</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line"><span class="token comment">// Result: [true, false]</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_7-lessthanorequal-a-b" tabindex="-1"><a class="header-anchor" href="#_7-lessthanorequal-a-b"><span>7. <code v-pre>.lessThanOrEqual(a, b)</code></span></a></h2>
+<p>Checks if elements in <code v-pre>a</code> are less than or equal to corresponding elements in <code v-pre>b</code>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Parameter</th>
+<th style="text-align:center">Type</th>
+<th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">a, b</td>
+<td style="text-align:center">Array</td>
+<td style="text-align:center">Arrays of the same shape</td>
+</tr>
+<tr>
+<td style="text-align:center">Returns</td>
+<td style="text-align:center">Array</td>
+<td style="text-align:center">Boolean array</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong>:</p>
+<div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js"><pre v-pre><code><span class="line"><span class="token keyword">import</span> <span class="token punctuation">{</span> lessThanOrEqual <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'openmadness'</span><span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line"><span class="token function">lessThanOrEqual</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line"><span class="token comment">// Result: [false, true]</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol start="8">
+<li><code v-pre>.greaterThan(a, b)</code></li>
+</ol>
+<p>Checks if elements in <code v-pre>a</code> are greater than corresponding elements in <code v-pre>b</code>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Parameter</th>
+<th style="text-align:center">Type</th>
+<th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">a, b</td>
+<td style="text-align:center">Array</td>
+<td style="text-align:center">Arrays of the same shape</td>
+</tr>
+<tr>
+<td style="text-align:center">Returns</td>
+<td style="text-align:center">Array</td>
+<td style="text-align:center">Boolean array</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong>:</p>
+<div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js"><pre v-pre><code><span class="line"><span class="token keyword">import</span> <span class="token punctuation">{</span> greaterThan <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'openmadness'</span><span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line"><span class="token function">greaterThan</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line"><span class="token comment">// Result: [true, false]</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_8-lessthan-a-b" tabindex="-1"><a class="header-anchor" href="#_8-lessthan-a-b"><span>8. <code v-pre>.lessThan(a, b)</code></span></a></h2>
+<p>Checks if elements in <code v-pre>a</code> are less than corresponding elements in <code v-pre>b</code>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Parameter</th>
+<th style="text-align:center">Type</th>
+<th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">a, b</td>
+<td style="text-align:center">Array</td>
+<td style="text-align:center">Arrays of the same shape</td>
+</tr>
+<tr>
+<td style="text-align:center">Returns</td>
+<td style="text-align:center">Array</td>
+<td style="text-align:center">Boolean array</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong>:</p>
+<div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js"><pre v-pre><code><span class="line"><span class="token keyword">import</span> <span class="token punctuation">{</span> lessThan <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'openmadness'</span><span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line"><span class="token function">lessThan</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line"><span class="token comment">// Result: [false, true]</span></span>
+<span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 
 

@@ -1,23 +1,25 @@
 ---
 lang: en-US
 title: "Frequently Asked Questions"
-description: "This page will guide you on how to install openmadness"
+description: "Frequently asked questions about OpenMadness"
 ---
 
-
-# FAQ
+# Frequently Asked Questions
 
 ## What’s the difference between OpenMadness and vanilla JavaScript array methods?
 
 OpenMadness simplifies array and math operations with intuitive, chainable methods (like `sum()` or `filterEven()`) and built-in utilities (e.g., statistics or matrix ops), while vanilla JS requires manual coding for these tasks.
 
-```js 
+```js
 // Vanilla js
-[1, 2, 3, 4].filter(x => x % 2 === 0).map(x => x ** 2).reduce((a, b) => a + b);  
+[1, 2, 3, 4]
+  .filter((x) => x % 2 === 0)
+  .map((x) => x ** 2)
+  .reduce((a, b) => a + b);
 
-// OpenMadness  
-omArray([1, 2, 3, 4]).filterEven().square().sum(); 
-``` 
+// OpenMadness
+omArray([1, 2, 3, 4]).filterEven().square().sum();
+```
 
 ## What should I do if a specific OpenMadness method is not working as expected?
 
@@ -27,30 +29,30 @@ First, verify your inputs match the method’s requirements (e.g., correct data 
 
 Yes, OpenMadness can be used alongside libraries like Lodash or NumJS, but there may be overlap in functionality (e.g., array operations). To avoid conflicts:
 
-* Use OpenMadness for simpler, math-focused tasks (e.g., statistics, vector operations).
-* Use Lodash for utility functions (e.g., deep cloning, object manipulation).
-* Use NumJS for advanced numerical computing (e.g., multi-dimensional arrays).
+- Use OpenMadness for simpler, math-focused tasks (e.g., statistics, vector operations).
+- Use Lodash for utility functions (e.g., deep cloning, object manipulation).
+- Use NumJS for advanced numerical computing (e.g., multi-dimensional arrays).
 
 ```js
-import _ from 'lodash';  
-import * as nj from 'numjs';  
-import { omArray } from 'openmadness';  
+import _ from "lodash";
+import * as nj from "numjs";
+import { omArray } from "openmadness";
 
-const data = [1, 2, 3];  
+const data = [1, 2, 3];
 
-// Lodash (utility)  
-const shuffled = _.shuffle(data);  
+// Lodash (utility)
+const shuffled = _.shuffle(data);
 
-// NumJS (advanced math)  
-const matrix = nj.array([1, 2, 3]);  
+// NumJS (advanced math)
+const matrix = nj.array([1, 2, 3]);
 
-// OpenMadness (simpler math ops)  
-const sum = omArray(data).sum();  
+// OpenMadness (simpler math ops)
+const sum = omArray(data).sum();
 ```
 
 ## How can I contribute to OpenMadness?
 
- To contribute or report a bug, visit the [OpenMadness GitHub repository](https://github.com/Dev-Liz/Product-docs-cohort-1). Check the contributing.md file for guidelines on submitting pull requests or issues. For bugs, provide a minimal reproducible example, your environment details (e.g., Node.js version, browser), and expected vs. actual behaviour.
+To contribute or report a bug, visit the [OpenMadness GitHub repository](https://github.com/Dev-Liz/Product-docs-cohort-1). Check the contributing.md file for guidelines on submitting pull requests or issues. For bugs, provide a minimal reproducible example, your environment details (e.g., Node.js version, browser), and expected vs. actual behaviour.
 
 ## Is OpenMadness compatible with older browsers?
 
@@ -60,22 +62,22 @@ OpenMadness is built for modern JavaScript environments. Some features may not w
 
 This error typically occurs if OpenMadness is not installed correctly or the import path is incorrect. Ensure you’ve run `npm install openmadness` and check that your import statement matches the library’s module name (e.g., `import OpenMadness from 'openmadness'`). Verify that the library is listed in your `package.json` dependencies. If using a CDN or script tag, confirm the file path or URL is correct
 
-
 ## Where can I report bugs or request new features?
 
 You can submit issues, bug reports, or feature requests on the [official GitHub repository](https://github.com/Dev-Liz/Product-docs-cohort-1)
 
 **Before submitting**:
 
-* Check existing issues to avoid duplicates.
-* For bugs, include:
-    * Steps to reproduce
-    * Expected vs. actual behavior
-    * Browser/Node.js version & OpenMadness version
+- Check existing issues to avoid duplicates.
+- For bugs, include:
 
-* For feature requests, explain:
-    * The problem it solves
-    * Suggested implementation (if possible)
+  - Steps to reproduce
+  - Expected vs. actual behavior
+  - Browser/Node.js version & OpenMadness version
+
+- For feature requests, explain:
+  - The problem it solves
+  - Suggested implementation (if possible)
 
 Contributions (PRs) are welcome! 🎉 Follow the repo’s guidelines for code submissions.
 
@@ -89,20 +91,19 @@ If OpenMadness isn’t recognized after installation, here are a few things to c
 
 1. Check the installation path:
 
- Make sure you’ve installed the library in the correct project folder. Run:
-```npm install openmadness```
+Make sure you’ve installed the library in the correct project folder. Run:
+`npm install openmadness`
 
 Then confirm that it appears in your `node_modules` directory and is listed in your `package.json`.
-
 
 2. Check your import statement:
 
 Depending on how the library is structured, you might need to import it correctly. Try:
 
 ```js
-const openmadness = require('openmadness'); // For CommonJS
+const openmadness = require("openmadness"); // For CommonJS
 // OR
-import openmadness from 'openmadness'; // For ES Modules
+import openmadness from "openmadness"; // For ES Modules
 ```
 
 Also, ensure your runtime supports ES Modules if using import.

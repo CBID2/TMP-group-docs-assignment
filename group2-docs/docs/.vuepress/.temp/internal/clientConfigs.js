@@ -9,6 +9,7 @@ import * as clientConfig7 from '/Users/ileolami/Documents/GitHub/Product-docs-co
 import * as clientConfig8 from '/Users/ileolami/Documents/GitHub/Product-docs-cohort-2/group2-docs/docs/.vuepress/.temp/markdown-tab/config.js'
 import * as clientConfig9 from '/Users/ileolami/Documents/GitHub/Product-docs-cohort-2/group2-docs/node_modules/@vuepress/plugin-theme-data/lib/client/config.js'
 import * as clientConfig10 from '/Users/ileolami/Documents/GitHub/Product-docs-cohort-2/group2-docs/node_modules/@vuepress/theme-default/lib/client/config.js'
+import * as clientConfig11 from '/Users/ileolami/Documents/GitHub/Product-docs-cohort-2/group2-docs/node_modules/@vuepress/plugin-search/lib/client/config.js'
 
 export const clientConfigs = [
   clientConfig0,
@@ -22,4 +23,5 @@ export const clientConfigs = [
   clientConfig8,
   clientConfig9,
   clientConfig10,
+  clientConfig11,
 ].map((m) => m.default).filter(Boolean)

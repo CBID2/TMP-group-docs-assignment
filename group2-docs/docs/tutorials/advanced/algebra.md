@@ -1,14 +1,14 @@
 ---
 lang: en-US
 title: "Algebra"
-description: "This page will guide you on how to install openmadness"
+description: "Learn how to work with algebra in OpenMadness"
 ---
 
 # Algebra
 
 Openmadness provides powerful linear algebra capabilities for vector/matrix operations, transformations, and decompositions. This guide covers essential concepts, advanced techniques, and practical applications across domains.
 
-1. Core Concepts
+## Core Concepts
 
 - Vector: 1D array `[1, 2, 3]`
 - Matrix: 2D array `[[1,2],[3,4]]`
@@ -21,10 +21,10 @@ Openmadness provides powerful linear algebra capabilities for vector/matrix oper
 - Matrix Multiplication (dot product)
 - Transposition (Aᵀ)
 
-2. Fundamental Operations
-   a. Vector Operations
+### Vector Operations
 
 ```js
+import { omArray, dot, cross, norm } from "Openmadness";
 const v = omArray([1, 2, 3]);
 const u = omArray([4, 5, 6]);
 
@@ -39,9 +39,10 @@ v.norm("l2"); // Euclidean: √14 ≈ 3.74
 v.norm("l1"); // Manhattan: 6
 ```
 
-b. Matrix Operations
+### Matrix Operations
 
 ```js
+import { omArray, add, multiply, dot } from "Openmadness";
 const A = omArray([
   [1, 2],
   [3, 4],
@@ -51,29 +52,31 @@ const B = omArray([
   [7, 8],
 ]);
 
-// Matrix multiplication
-A.dot(B); // [[19,22],[43,50]]
+// Matrix multiplication (dot product)
+dot(A, B); // [[19,22],[43,50]]
 
 // Element-wise operations
-A.multiply(B); // [[5,12],[21,32]]
+multiply(A, B); // [[5,12],[21,32]]
 
 // Scalar operations
-A.add(5); // [[6,7],[8,9]]
+add(A, 5); // [[6,7],[8,9]]
 ```
 
-c. Special Matrices
+### Special Matrices
 
 ```js
+// Identity, zeros, and diagonal matrices
 omArray.identity(3); // 3x3 identity
 omArray.zeros(2, 4); // 2x4 zero matrix
 omArray.diag([1, 2, 3]); // Diagonal matrix
 ```
 
-3. Advanced Decompositions
+## Advanced Decompositions
 
 a. Eigen Decomposition
 
 ```js
+import { omArray, multiply, equals, getCol } from "Openmadness";
 const A = omArray([
   [4, 2],
   [1, 3],
@@ -90,6 +93,7 @@ A.dot(vectors.getCol(0)).equals(vectors.getCol(0).multiply(values[0])); // true
 b. Singular Value Decomposition (SVD)
 
 ```js
+import { omArray, dot, diag, transpose } from "Openmadness";
 const M = omArray([
   [1, 2],
   [3, 4],
@@ -108,11 +112,13 @@ const [L, U, P] = A.lu();
 // P×A = L×U (P = permutation matrix)
 ```
 
-4. Solving Linear Systems
+## Solving Linear Systems
+
    a. Basic Equations
    Solve `Ax = b`:
 
 ```js
+import { omArray, solve } from "Openmadness";
 const A = omArray([
   [3, 2],
   [1, 2],
@@ -125,6 +131,7 @@ b. Least Squares Solutions
 For overdetermined systems:
 
 ```js
+import { omArray, solve } from "Openmadness";
 const A = omArray([
   [1, 1],
   [1, 2],
@@ -137,12 +144,14 @@ const x = A.solve(b, { method: "svd" }); // [1, 2]
 c. Matrix Inversion
 
 ```js
+import { inv, approxEquals, identity } from "Openmadness";
 const A_inv = A.inv();
 A.dot(A_inv).approxEquals(omArray.identity(2)); // true
 ```
 
-5. Practical Applications
-   a. Computer Graphics
+## Practical Applications
+
+a. Computer Graphics
    3D Rotation:
 
 ```js
@@ -164,7 +173,7 @@ b. Machine Learning
 Principal Component Analysis:
 
 ```js
-
+import { omArray, subtract, covarianceMatrix, eigen, sliceCols } from "Openmadness";
 const data = omArray([...]); // n×p matrix
 const centered = data.subtract(data.mean(0));
 const cov = centered.covarianceMatrix();
@@ -176,6 +185,7 @@ c. Physics Simulations
 Spring System:
 
 ```js
+import { omArray, diag, add, solve } from "Openmadness";
 // Mass-spring stiffness matrix
 const K = omArray
   .diag([2, 2, 2])
@@ -192,6 +202,7 @@ const u = K.solve(F);
 d. Economics (Input-Output Models)
 
 ```js
+import { omArray, identity, subtract, inv, dot } from "Openmadness";
 const Leontief = omArray.identity(3).subtract(
   omArray([
     [0.2, 0.1, 0.0],
@@ -204,7 +215,7 @@ const demand = omArray([100, 200, 150]);
 const production = Leontief.inv().dot(demand);
 ```
 
-6. Performance Optimization
+## Performance Optimization
 
 - **Small systems:** `lu()`
 - **Rank-deficient:** `svd()`
@@ -214,6 +225,7 @@ const production = Leontief.inv().dot(demand);
 Memory Efficiency:
 
 ```js
+import { dot, add } from "Openmadness";
 // Avoid temporary matrices
 A.dot(B).add(C); // Creates intermediate
 
@@ -221,7 +233,7 @@ A.dot(B).add(C); // Creates intermediate
 A.dot(B, { inplace: true }).add(C); // No copy
 ```
 
-7. Edge Cases & Handling
+## Edge Cases & Handling
 
 - **Singular matrix:** `solve()` throws `SingularMatrixError`
 - **Non-convergent algorithm:** Throws `ConvergenceError`
@@ -229,7 +241,7 @@ A.dot(B, { inplace: true }).add(C); // No copy
 - **Ill-conditioned matrix:** Warns about condition number
 - **Complex eigenvalues:** Returns complex numbers (future)
 
-8. Real-World Case Study: Robot Arm Kinematics
+## Real-World Case Study: Robot Arm Kinematics
 
 Problem: Calculate joint angles for target position
 
@@ -278,9 +290,3 @@ for (let i = 0; i < 100; i++) {
   θ = θ.add(Δθ);
 }
 ```
-Footer
-© 2025 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Secu

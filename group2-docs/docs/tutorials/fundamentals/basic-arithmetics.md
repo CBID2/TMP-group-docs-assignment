@@ -35,6 +35,7 @@ console.log("Marketing Spend:", marketingSpend.data); // Output: [10, 25, 40]
 2. To calculate the total revenue by adding the marketing spend to each sale:
 
 ```js
+import { add } from 'openmadness';
 // Add two arrays (element-wise)
 const totalRevenue = dailySales.add(marketingSpend);
 console.log("Total Revenue (Sales + Spend):", totalRevenue.data); // Output: [110, 175, 240]
@@ -43,6 +44,7 @@ console.log("Total Revenue (Sales + Spend):", totalRevenue.data); // Output: [11
 3. To calculate the net sales by subtracting the marketing spend from each sale:
 
 ``` js
+import { subtract } from 'openmadness';
 const netSales = dailySales.subtract(marketingSpend);
 console.log("Net Sales (Sales - Spend):", netSales.data); // Output: [90, 125, 160]
 ```
@@ -56,6 +58,8 @@ console.log("Net Sales (Sales - Spend):", netSales.data); // Output: [90, 125, 1
 | Day 3 | 20             |
 
 ``` js
+import { add } from 'openmadness';
+
 const salesIncrease = dailySales.add([50, 75, 20]);
 console.log("Sales after increase:", salesIncrease.data); // Output: [140, 200, 180 ]
 ```
@@ -63,6 +67,7 @@ console.log("Sales after increase:", salesIncrease.data); // Output: [140, 200, 
 5. To calculate the doubled sales by multiplying each sale by 2:
 
 ```js
+import { multiply } from 'openmadness';
 const doubledSales = dailySales.multiply(2);
 console.log("Doubled Sales:", doubledSales.data); // Output: [280, 400, 360]
 ```
@@ -70,6 +75,7 @@ console.log("Doubled Sales:", doubledSales.data); // Output: [280, 400, 360]
 6. To calculate the sales ratio by dividing each sale by the corresponding marketing spend:
 
 ```js
+import { divide } from 'openmadness';
 const salesRatio = dailySales.divide(marketingSpend);
 console.log("Sales Ratio (Sales / Spend):", salesRatio.data); // Output: [10, 6, 5]
 ```

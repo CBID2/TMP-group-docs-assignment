@@ -1,9 +1,8 @@
 ---
 lang: en-US
 title: "Building a Network"
-description: "This page will guide you on how to install openmadness"
+description: "Learn how to build a network in Openmadness"
 ---
-
 
 # Building a Tiny Neural Network
 
@@ -13,7 +12,7 @@ This section walks you through creating a simple, 3-layer neural net: one input 
 
 **Step 1: Import and Define Inputs**
 
-```javascript
+```js
 import { omArray } from 'openmadness';
 
 const inputs = omArray([
@@ -26,7 +25,9 @@ Each row represents one input sample with two features.
 
 **Step 2: Define Random Weights**
 
-```javascript
+```js
+import { omArray } from 'openmadness';
+
 const weights1 = omArray([
   [Math.random(), Math.random()],
   [Math.random(), Math.random()]
@@ -38,17 +39,19 @@ const weights2 = omArray([
 ]);
 
 ```
+
 - `weights1` connects the input layer to the hidden layer (2x2)
 - `weights2` connects the hidden layer to the output layer (2x1)
 
 **Step 3: Add Sigmoid Function**
 
-```javascript
+```js
 const sigmoid = (x) => 1 / (1 + Math.exp(-x));
 ```
+
 **Step 4: Forward Pass**
 
-```javascript
+```js
 const hidden = inputs
   .dot(weights1)
   .map(row => row.map(sigmoid));
@@ -58,8 +61,8 @@ const output = omArray(hidden)
   .map(row => row.map(sigmoid));
 
 console.log('Output:', output.values);
-
 ```
+
 **Run the Code**
 
 To run the script:
@@ -67,6 +70,7 @@ To run the script:
 ```bash
 node tiny-net.js
 ```
+
 Example output:
 
 ```bash
