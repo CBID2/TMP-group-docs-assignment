@@ -121,11 +121,11 @@ Join the OpenMadness community to enhance your data manipulation workflow and co
 The main purpose of this repository is to continue evolving React core, making it faster and easier to use. Development of React happens in the open on GitHub, and we are grateful to the community for contributing bugfixes and improvements. Read below to learn how you can take part in improving React.
 
 ### Code of Conduct
-Facebook has adopted a Code of Conduct that we expect project participants to adhere to. Please read the full text so that you can understand what actions will and will not be tolerated.
+Openmadness has adopted a Code of Conduct that we expect project participants to adhere to. Please read the full text so that you can understand what actions will and will not be tolerated.
 
 ### Contributing Guide
 Read our contributing guide to learn about our development process, how to propose bugfixes and improvements, and how to build and test your changes to React.
-See [CONTRIBUTING-GUIDE.md](CONTRIBUTING-GUIDE.md) to get started contributing!
+See [Contributing Guide](https://openmadness-docs.vercel.app/resources/contributing.html) to get started contributing!
 
 ### Our Primary Contributors
 Here's a list of amazing talents who worked together to make this project a success:
