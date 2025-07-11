@@ -129,18 +129,20 @@ See [CONTRIBUTING-GUIDE.md](CONTRIBUTING-GUIDE.md) to get started contributing!
 
 ### Our Primary Contributors
 Here's a list of amazing talents who worked together to make this project a success:
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [Elizabeth Bassey](https://github.com/Dev-Liz/) - Homepage, Changelog, Brand-Identity
+- [Christine Belzie](https://github.com/CBID2) - Quickstart Guide & Edit buttons
+- [Judith Etugbo](https://github.com/Nickyshe) - Advanced Tutorials
+- [Mercy Ileolami](https://github.com/Ileolami) - OM Functions - Content Review
+- [Onwuemene Joshua](https://github.com/onwuemenejoshua) - FAQ & Glossary
+- [Samuel Thomas](https://github.com/Sammex45) - Project's Readme
+- [Olubisi Folarin](https://github.com/olubisifolarin) - OM-Functions
+- [Charles Timiebifemere](https://github.com/Charlestimi) - Fundamental Tutorials
+- [Andrea Bravo Balado](https://github.com/andreacbravob) - Contribution Guide
+- [Rose Akoth](https://github.com/roakoth) - Intermediate and Advanced Guide
+- [Samuel Benson](https://github.com/Samuel-Benso) - Introduction and Installtion Guide
+- [Gloria Tejuosho](https://github.com/gloriadasilva) - Fundamental Guide
+
+  
 
 
 
