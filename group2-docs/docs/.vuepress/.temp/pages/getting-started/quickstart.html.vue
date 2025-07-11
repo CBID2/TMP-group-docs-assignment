@@ -70,10 +70,10 @@
 <h2 id="next-steps" tabindex="-1"><a class="header-anchor" href="#next-steps"><span><strong>Next Steps</strong></span></a></h2>
 <p>Congratulations! You just created your first simulation! 👍 Now that you have gotten the basics down, consider picking the following:</p>
 <ul>
-<li>Guides</li>
-<li>Tutorials</li>
+<li><RouteLink to="/group2-docs/docs/guides.html">Guides</RouteLink></li>
+<li><RouteLink to="/group2-docs/docs/tutorials.html">Tutorials</RouteLink></li>
 </ul>
 <p>Got any ideas to improve the guide, check out our CONTRIBUTING guide on GitHub.</p>
-</div></template>
+<contributors /></div></template>
 
 

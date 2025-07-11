@@ -3,6 +3,17 @@ import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
+     plugins: [
+       'vuepress-plugin-contributors', {
+            showAvatar: true,
+            showCount: true,
+            avatarSize: 32,
+            defaultAvatar: '/not-found.png', 
+            avatarProvider: 'github',
+            userProfileUrlProvider: 'github'
+        }
+     ],
+
   lang: 'en-US',
 
   description: 'Openmadness Documentation',
