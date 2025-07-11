@@ -1,7 +1,7 @@
 ---
 lang: en-US
 title: "3D Array"
-description: "This page will guide you on how to install openmadness"
+description: "Learn how to work with 3D arrays in OpenMadness"
 ---
 
 # 3D Array

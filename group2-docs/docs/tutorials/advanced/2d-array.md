@@ -1,16 +1,16 @@
 ---
 lang: en-US
 title: "2D Array"
-description: "This page will guide you on how to install openmadness"
+description: "Learn how to work with 2D arrays in OpenMadness"
 ---
 
 # 2D Arrays
 
-Openmadness simplifies complex 2D array operations with an intuitive, chainable API. This guide provides a comprehensive breakdown of core concepts, key features, advanced use cases, and best practices for working with 2D arrays in Openmadness.
+OpenMadness simplifies complex 2D array operations with an intuitive, chainable API. This guide provides a comprehensive breakdown of core concepts, key features, advanced use cases, and best practices for working with 2D arrays in OpenMadness.
 
 ## 2D Array Structure
 
-A 2D array in Openmadness is a nested array where each element is a row.
+A 2D array in OpenMadness is a nested array where each element is a row.
 Example:
 
 ```js
@@ -30,7 +30,7 @@ Axis Conventions
 Initialize with omArray:
 
 ```js
-import { omArray } from "Openmadness";
+import { omArray, zeros, fromFunction } from "Openmadness";
 
 // From nested arrays
 const matrix = omArray([
@@ -43,7 +43,8 @@ const matrix = omArray([
 const zeros = omArray().zeros(3, 2);
 
 // From function (3x3 matrix with random values)
-const randomMatrix = omArray().fromFunction(3, 3, () => Math.random());
+const randomMatrix = omArray().fromFunction(3, 3, () => Math.random()); // Output: [[0.1, 0.2, 0.3], [0.4, 0.5, 0.6], [0.7, 0.8, 0.9]]**
+
 ```
 
 ## Key Operations
@@ -81,6 +82,7 @@ matrix.mean(1); // [2, 5, 8] (row-wise averages)
 - Element-wise Arithmetic:
 
 ```js
+import { omArray, add, multiply } from "Openmadness";
 const matrixA = omArray([
   [1, 2],
   [3, 4],
@@ -97,6 +99,7 @@ matrixA.multiply(matrixB); // [[5, 12], [21, 32]]
 - Matrix Multiplication (Dot Product):
 
 ```js
+import { dot } from "Openmadness";
 matrixA.dot(matrixB); // [[19, 22], [43, 50]]
 ```
 
@@ -112,6 +115,7 @@ matrix.slice({ rows: [0, 2], cols: [1, 3] });
 - Boolean Masking:
 
 ```js
+import { greaterThan, filter } from "Openmadness";
 const mask = matrix.greaterThan(5);
 // [[false, false, false], [false, false, true], [true, true, true]]
 matrix.filter(mask); // [6, 7, 8, 9]
@@ -183,6 +187,6 @@ matrix.transpose().reshape(1, 9).sum();
 
 ## Edge Cases & Pitfalls
 
-1. Dimension Mismatch: `.dot()` throws if columns (A) ≠ rows (B).
-2. Immutability: All methods return new `omArray` objects; original data remains unchanged.
-3. Non-Numeric Data: Operations like `.sum()` ignore `NaN/undefined` but may return NaN if all values are invalid.
+1. **Dimension Mismatch**: `.dot()` throws if columns (A) ≠ rows (B).
+2. **Immutability**: All methods return new `omArray` objects; original data remains unchanged.
+3. **Non-Numeric Data**: Operations like `.sum()` ignore `NaN/undefined` but may return `NaN` if all values are invalid.

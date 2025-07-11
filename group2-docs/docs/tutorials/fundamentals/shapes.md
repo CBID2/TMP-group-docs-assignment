@@ -20,7 +20,8 @@ The shape property returns an array where each element represents the size of a 
 - 1D Array (Vector)
 
 ```js
-const temperatures = om.array([72, 75, 68, 71, 69]);
+import { omArray, shape } from 'openmadness';
+const temperatures = omArray([72, 75, 68, 71, 69]);
 console.log("Temperatures shape:", temperatures.shape); // Output: [5]
 // A single dimension with 5 elements
 ```
@@ -28,7 +29,8 @@ console.log("Temperatures shape:", temperatures.shape); // Output: [5]
 - 2D Array (Matrix)
 
 ```js
-const monthlyRevenue = om.array([
+import { omArray, shape } from 'openmadness';
+const monthlyRevenue = omArray([
   [45000, 52000, 49000], // Q1 revenue for 3 products
   [48000, 51000, 47000], // Q2 revenue for 3 products
   [50000, 53000, 51000], // Q3 revenue for 3 products
@@ -40,7 +42,8 @@ console.log("Monthly Revenue shape:", monthlyRevenue.shape); // Output: [3, 3]
 - 3D Array (Cube)
 
 ```js
-const yearlyData = om.array([
+import { omArray, shape } from 'openmadness';
+const yearlyData = omArray([
   // Year 1
   [
     [10, 20, 30], // Product A, regions 1-3
@@ -69,9 +72,9 @@ Understanding shapes is essential because:
 You can transform an array's shape while preserving its data using the `reshape()` method:
 
 ```js
-import om from "openmadness";
+import { omArray, shape, reshape } from "openmadness";
 
-const data = om.array([1, 2, 3, 4, 5, 6]);
+const data = omArray([1, 2, 3, 4, 5, 6]);
 console.log("Original shape:", data.shape); // Output: [6]
 
 const reshaped = data.reshape([2, 3]);
